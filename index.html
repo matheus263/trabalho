@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Pessoal</title>
+    
+    
+    <style>
+        /* Configuração básica para o layout da página */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6; 
+            display: flex; 
+            flex-direction: column;
+            min-height: 100vh; 
+        }
+
+        /* Estilização do cabeçalho e rodapé */
+        header,
+        footer {
+            background-color: #E0720A; 
+            color: #fff;
+            padding: 15px 0;
+            text-align: center; 
+        }
+
+        /* Estilização para o menu de navegação */
+        nav {
+            background-color: #fff; 
+            border-bottom: 2px solid #E0720A;
+        }
+
+        /* Estilização da lista de navegação (links do menu) */
+        nav ul {
+            list-style: none;
+            display: flex; 
+            justify-content: center; 
+            margin: 0; 
+            padding: 0; 
+        }
+
+        /* Estilização individual dos itens da lista */
+        nav ul li {
+            margin: 0 10px; 
+        }
+
+        /* Estilização dos links no menu */
+        nav ul li a {
+            text-decoration: none; 
+            padding: 10px 20px; 
+            color: #E0720A; 
+            font-weight: bold; 
+            border: 2px solid #E0720A; 
+            border-radius: 5px; 
+            transition: background-color 0.3s; 
+        }
+
+        /* Estilização para o efeito de hover (quando o mouse passa sobre o link) */
+        nav ul li a:hover {
+            background-color: #E0720A; 
+            color: #fff; 
+        }
+
+        /* Estilização para a área principal do conteúdo */
+        .container {
+            flex: 1; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center;
+            padding: 20px; 
+            max-width: 1000px; 
+            margin: 0 auto; 
+        }
+
+        /* Estilização dos títulos dentro da área principal */
+        .container h1 {
+            color: #E0720A; 
+            margin-bottom: 20px;
+        }
+
+        /* Estilização dos parágrafos */
+        .container p {
+            text-align: justify; 
+            margin-bottom: 20px; 
+        }
+
+        /* Estilização para o formulário de contato */
+        form {
+            width: 100%; 
+            max-width: 600px; 
+            margin: 0 auto; 
+            display: flex;
+            flex-direction: column; 
+        }
+
+        /* Estilização para os rótulos dos campos do formulário */
+        form label {
+            margin-bottom: 5px; 
+            font-weight: bold; 
+        }
+
+        /* Estilização para os campos de entrada de texto e área de texto */
+        form input,
+        form textarea {
+            margin-bottom: 15px; 
+            padding: 10px; 
+            border: 1px solid #ccc; 
+            border-radius: 5px; 
+            font-size: 1em; 
+        }
+
+        /* Estilização para o botão de envio do formulário */
+        form button {
+            padding: 10px; 
+            background-color: #E0720A; 
+            color: #fff; 
+            border: none; 
+            border-radius: 5px; 
+            font-size: 1em; 
+            cursor: pointer; 
+            transition: background-color 0.3s; 
+        }
+
+        /* Efeito de hover para o botão */
+        form button:hover {
+            background-color: #c25f0b; 
+        }
+
+        /* Media query para dispositivos móveis */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column; /* Organiza os itens em coluna */
+                align-items: center; /* Centraliza os itens */
+            }
+
+            nav ul li {
+                margin-bottom: 10px; /* Adiciona um espaçamento abaixo de cada item */
+            }
+
+            /* Ajusta o padding do container em telas menores */
+            .container {
+                padding: 10px;
+            }
+
+            /* Ajusta o formulário em telas menores */
+            form {
+                width: 100%; /* Faz o formulário ocupar 100% da largura do container */
+                padding: 10px; /* Adiciona um pequeno padding interno */
+            }
+        }
+        #portfolio ul a{
+            color: #365C66;
+        }
+        #formacao,#portfolio, #contato, #sobre-mim{
+            margin-top: 50px;
+        } 
+    </style>
+</head>
+
+<body>
+    <!-- Cabeçalho do site -->
+    <header>
+        <h1>Portfólio Pessoal</h1>
+    </header>
+
+    <!-- Menu de navegação -->
+    <nav>
+        <ul>
+            <!-- Cada item do menu é um link que leva a uma seção da página -->
+            <li><a href="#sobre-mim">Sobre Mim</a></li>
+            <li><a href="#formacao">Formação</a></li>
+            <li><a href="#portfolio">Portfólio</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+    <!-- Conteúdo principal do site -->
+    <div class="container">
+        <!-- Seção sobre mim -->
+        <section id="sobre-mim">           
+            <h1>Sobre Mim</h1>
+            <!-- Texto descritivo -->
+            <p>Me chamo Matheus Dos Santos. Sou um estudante entusiasta no mundo do Desenvolvimento de Tecnologias. 
+            apesar de ser um iniciante, sou um grande curioso por novas tendências tecnologicas e sempre querendo aprendê-las. no tempo livre, amo assistir futebol e jogar video game. </p>
+        </section>
+
+        <!-- Seção de formação -->
+        <section id="formacao">
+            <h1>Formação</h1>
+            <!-- Informações sobre a formação -->
+            <p><strong>Curso:</strong> Análise e Desenvolvimento de Sistemas</p>
+            <p><strong>Inglês:</strong> Básico</p>
+        </section>
+
+        <!-- Seção de portfólio -->
+        <section id="portfolio">
+            <h1>Portfólio</h1>
+            <p>Veja abaixo alguns dos trabalhos que já desenvolvi:</p>
+            <!-- Lista de projetos com links -->
+            <ul>
+                <li><a href="https://matheus263.github.io/biografia/">Projeto: site Biografia</a></li>
+                <li><a href="https://matheus263.github.io/eletricista/">Projeto: site Eletricista</a></li>
+            </ul>
+        </section>
+
+        <!-- Seção de contato -->
+        <section id="contato">
+            <h1>Contato</h1>
+            <!-- Formulário de contato -->
+            <form action="#" method="post">
+                <!-- Campo para nome -->
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" required>
+
+                <!-- Campo para email -->
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" required>
+
+                <!-- Campo para mensagem -->
+                <label for="mensagem">Mensagem:</label>
+                <textarea name="mensagem" id="mensagem" rows="5" required></textarea>
+
+                <!-- Botão de envio do formulário -->
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </div>
+
+    <!-- Rodapé do site -->
+    <footer>
+        <p>&copy; 2024 Matheus Dos Santos. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
